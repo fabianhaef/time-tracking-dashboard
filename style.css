@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+:root {
+
+  --blue: hsl(246, 80%, 60%);
+  --light-red: #ff8c66;
+  --soft-blue: hsl(195, 74%, 62%);
+  --light-red:  hsl(348, 100%, 68%);
+  --lime-green: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --soft-orange: hsl(43, 84%, 65%);
+  --very-dark-blue: #0f1424;
+  --dark-blue: #1c1f4a;
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0D1323;
+}
+
+
+.article {
+  width: 330px;
+  border-radius: 15px;
+}
+
+.report {
+  background-color: var(--dark-blue);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--blue);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.image-box {
+  width: 70px;
+  height: 70px;
+}
+
+.image-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: 2px solid var(--pale-blue)
+}
+
+.report-title {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--pale-blue);
+  display: block;
+}
+
+.report-subtitle {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--desaturated-blue);
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filter-span {
+  font-size: 16px;
+  color: var(--pale-blue);
+  padding: 1rem;
+}
+
+.active {
+  color: white;
+}
+
+.article-work {
+  background: #FF8B64 url('./images/icon-work.svg') no-repeat right top;
+  padding-top: 2rem;
+}
+
+.article-body {
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.article-header h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.article-header img {
+  color: #CFD1FF;
+}
+
+.article-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-content h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.article-content span {
+  color: var(--pale-blue);
+  font-weight: 300;
+  font-size: 16px;
+}
