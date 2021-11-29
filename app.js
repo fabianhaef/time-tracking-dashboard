@@ -1,104 +1,181 @@
 let data = {
   'Work': {
-    'daily': {
+    'Daily': {
       'current': '5hrs',
-      'previous':'7hrs'
+      'last':'Yesterday - 7hrs'
     },
-    'weekly': {
+    'Weekly': {
       'current': '32hrs',
-      'previous':'36hrs'
+      'last':'Last week - 36hrs'
     },
-    'monthly': {
+    'Monthly': {
       'current': '103hrs',
-      'previous':'128hrs'
+      'last':'Last month - 128hrs'
     }
   },
   'Play': {
-    'daily': {
+    'Daily': {
       'current': '1hrs',
-      'previous':'2hrs'
+      'last':'Yesterday - 2hrs'
     },
-    'weekly': {
+    'Weekly': {
       'current': '10hrs',
-      'previous':'8hrs'
+      'last':'Last week - 8hrs'
     },
-    'monthly': {
+    'Monthly': {
       'current': '23hrs',
-      'previous':'29hrs'
+      'last':'Last month - 29hrs'
     }
   },
   'Study': {
-    'daily': {
+    'Daily': {
       'current': '0hrs',
-      'previous':'1hrs'
+      'last':'Yesterday - 1hrs'
     },
-    'weekly': {
+    'Weekly': {
       'current': '4hrs',
-      'previous':'7hrs'
+      'last':'Last week - 7hrs'
     },
-    'monthly': {
+    'Monthly': {
       'current': '13hrs',
-      'previous':'19hrs'
+      'last':'Last month - 19hrs'
     }
   },
   'Exercise': {
-    'daily': {
+    'Daily': {
       'current': '1hrs',
-      'previous':'1hrs'
+      'last':'Yesterday - 1hrs'
     },
-    'weekly': {
+    'Weekly': {
       'current': '4hrs',
-      'previous':'5hrs'
+      'last':'Last week - 5hrs'
     },
-    'monthly': {
+    'Monthly': {
       'current': '11hrs',
-      'previous':'18hrs'
+      'last':'Last month - 18hrs'
     }
   },
   'Social': {
-    'daily': {
+    'Daily': {
       'current': '1hrs',
-      'previous':'3hrs'
+      'last':'Yesterday - 3hrs'
     },
-    'weekly': {
+    'Weekly': {
       'current': '5hrs',
-      'previous':'10hrs'
+      'last':'Last week - 10hrs'
     },
-    'monthly': {
+    'Monthly': {
       'current': '21hrs',
-      'previous':'23hrs'
+      'last':'Last month - 23hrs'
     }
   },
   'Self Care': {
-    'daily': {
+    'Daily': {
       'current': '0hrs',
-      'previous':'1hrs'
+      'last':'Yesterday - 1hrs'
     },
-    'weekly': {
+    'Weekly': {
       'current': '2hrs',
-      'previous':'2hrs'
+      'last':'Last week - 2hrs'
     },
-    'monthly': {
+    'Monthly': {
       'current': '7hrs',
-      'previous':'11hrs'
+      'last':'Last month - 11hrs'
     }
   },
 }
 
-let state = 'weekly'
-
-
+let state = 'Weekly'
 const filters = document.querySelectorAll('.filter span')
+
+/* Stat elements */
+let workCurrent = document.getElementById("work-current")
+let workLast = document.getElementById("work-last")
+
+let playCurrent = document.getElementById("play-current")
+let playLast = document.getElementById("play-last")
+
+let studyCurrent = document.getElementById("study-current")
+let studyLast = document.getElementById("study-last")
+
+let exerciseCurrent = document.getElementById("exercise-current")
+let exerciseLast = document.getElementById("exercise-last")
+
+let socialCurrent = document.getElementById("social-current")
+let socialLast = document.getElementById("social-last")
+
+let selfcareCurrent = document.getElementById("self-care-current")
+let selfcareLast = document.getElementById("self-care-last")
 
 filters.forEach((filter) => {
   filter.addEventListener('click', () => {
-    let newState = filter.innerHTML;
+    filters.forEach((oldFilterElements) => {
+      oldFilterElements.classList.remove('active')
+    })
     filter.classList.add("active")
+    state = filter.innerHTML;
+    changeStats(state)
   })
 })
 
 
-const updateState = () => {
-  
+const changeStats = (state) => {
+  console.log("hello")
+  if(state == 'Monthly') {
+    workCurrent.innerHTML = data['Work'][state].current
+    workLast.innerHTML = data['Work'][state].last
+
+    playCurrent.innerHTML = data['Play'][state].current
+    playLast.innerHTML = data['Play'][state].last
+
+    studyCurrent.innerHTML = data['Study'][state].current
+    studyLast.innerHTML = data['Study'][state].last
+
+    exerciseCurrent.innerHTML = data['Exercise'][state].current
+    exerciseLast.innerHTML = data['Exercise'][state].last
+
+    socialCurrent.innerHTML = data['Social'][state].current
+    socialLast.innerHTML = data['Social'][state].last
+
+    selfcareCurrent.innerHTML = data['Self Care'][state].current
+    selfcareLast.innerHTML = data['Self Care'][state].last
+
+  } else if (state == 'Weekly') {
+    workCurrent.innerHTML = data['Work'][state].current
+    workLast.innerHTML = data['Work'][state].last
+
+    playCurrent.innerHTML = data['Play'][state].current
+    playLast.innerHTML = data['Play'][state].last
+
+    studyCurrent.innerHTML = data['Study'][state].current
+    studyLast.innerHTML = data['Study'][state].last
+
+    exerciseCurrent.innerHTML = data['Exercise'][state].current
+    exerciseLast.innerHTML = data['Exercise'][state].last
+
+    socialCurrent.innerHTML = data['Social'][state].current
+    socialLast.innerHTML = data['Social'][state].last
+
+    selfcareCurrent.innerHTML = data['Self Care'][state].current
+    selfcareLast.innerHTML = data['Self Care'][state].last
+  } else {
+    workCurrent.innerHTML = data['Work'][state].current
+    workLast.innerHTML = data['Work'][state].last
+
+    playCurrent.innerHTML = data['Play'][state].current
+    playLast.innerHTML = data['Play'][state].last
+
+    studyCurrent.innerHTML = data['Study'][state].current
+    studyLast.innerHTML = data['Study'][state].last
+
+    exerciseCurrent.innerHTML = data['Exercise'][state].current
+    exerciseLast.innerHTML = data['Exercise'][state].last
+
+    socialCurrent.innerHTML = data['Social'][state].current
+    socialLast.innerHTML = data['Social'][state].last
+
+    selfcareCurrent.innerHTML = data['Self Care'][state].current
+    selfcareLast.innerHTML = data['Self Care'][state].last
+  }
 }
 

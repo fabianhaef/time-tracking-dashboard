@@ -32,10 +32,14 @@ body {
   background-color: #0D1323;
 }
 
+main {
+  padding: 24px;
+}
 
 .article {
   width: 330px;
   border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
 .report {
@@ -95,11 +99,6 @@ body {
   color: white;
 }
 
-.article-work {
-  background: #FF8B64 url('./images/icon-work.svg') no-repeat right top;
-  padding-top: 2rem;
-}
-
 .article-body {
   background-color: var(--dark-blue);
   border-radius: 15px;
@@ -139,4 +138,35 @@ body {
   color: var(--pale-blue);
   font-weight: 300;
   font-size: 16px;
+}
+
+.article-work {
+  background: #FF8B64 url('./images/icon-work.svg') no-repeat right top;
+  padding-top: 32px;
+}
+
+
+.article-play {
+  background: var(--soft-blue) url('./images/icon-play.svg') no-repeat right top;
+  padding-top: 32px;
+}
+
+.article-study {
+  background: var(--light-red) url('./images/icon-study.svg') no-repeat right top;
+  padding-top: 32px;
+}
+
+.article-exercise {
+  background: var(--lime-green) url('./images/icon-exercise.svg') no-repeat right top;
+  padding-top: 32px;
+}
+
+.article-social {
+  background: var(--violet) url('./images/icon-social.svg') no-repeat right top;
+  padding-top: 32px;
+}
+
+.article-self-care {
+  background: var(--soft-orange) url('./images/icon-self-care.svg') no-repeat right top;
+  padding-top: 32px;
 }
