@@ -1,111 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Time tracking dashboard</title>
 </head>
+
 <body>
   <main>
-    <article class="article report">
-      <div class="report-header">
-        <div class="image-box">
-          <img src="./images/image-jeremy.png" alt="profile-image">
+    <section class="profile">
+      <article class="article report">
+        <div class="report-header">
+          <div class="image-box">
+            <img src="./images/image-jeremy.png" alt="profile-image">
+          </div>
+          <div>
+            <span class="report-subtitle">Report for </span>
+            <h1 class="report-title">Jeremy Robson</h1>
+          </div>
         </div>
-        <div>
-          <span class="report-subtitle">Report for </span>
-          <h1 class="report-title">Jeremy Robson</h1>
+        <div class="filter">
+          <span class="filter-span ">Daily</span>
+          <span class="filter-span active">Weekly</span>
+          <span class="filter-span ">Monthly</span>
         </div>
-      </div>
-      <div class="filter">
-        <span class="filter-span ">Daily</span>
-        <span class="filter-span active">Weekly</span>
-        <span class="filter-span ">Monthly</span>
-      </div>
-    </article>
+      </article>
+    </section>
 
-    <article class="article article-work">
-      <div class="article-body">
-        <div class="article-header">
-          <h1>Work</h1>
-          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+    <section class="time-trackers">
+      <article class="article article-work">
+        <div class="article-body">
+          <div class="article-header">
+            <h1>Work</h1>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+          </div>
+          <div class="article-content">
+            <h2 id="work-current">32hrs</h2>
+            <span id="work-last">Last week - 36hrs</span>
+          </div>
         </div>
-        <div class="article-content">
-          <h2 id="work-current">32hrs</h2>
-          <span id="work-last">Last week - 36hrs</span>
-        </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="article article-play">
-      <div class="article-body">
-        <div class="article-header">
-          <h1>Play</h1>
-          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+      <article class="article article-play">
+        <div class="article-body">
+          <div class="article-header">
+            <h1>Play</h1>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+          </div>
+          <div class="article-content">
+            <h2 id="play-current">10hrs</h2>
+            <span id="play-last">Last week - 8hrs</span>
+          </div>
         </div>
-        <div class="article-content">
-          <h2 id="play-current">10hrs</h2>
-          <span id="play-last">Last week - 8hrs</span>
-        </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="article article-study">
-      <div class="article-body">
-        <div class="article-header">
-          <h1>Study</h1>
-          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+      <article class="article article-study">
+        <div class="article-body">
+          <div class="article-header">
+            <h1>Study</h1>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+          </div>
+          <div class="article-content">
+            <h2 id="study-current">4hrs</h2>
+            <span id="study-last">Last week - 7hrs</span>
+          </div>
         </div>
-        <div class="article-content">
-          <h2 id="study-current">4hrs</h2>
-          <span id="study-last">Last week - 7hrs</span>
-        </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="article article-exercise">
-      <div class="article-body">
-        <div class="article-header">
-          <h1>Exercise</h1>
-          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+      <article class="article article-exercise">
+        <div class="article-body">
+          <div class="article-header">
+            <h1>Exercise</h1>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+          </div>
+          <div class="article-content">
+            <h2 id="exercise-current">4hrs</h2>
+            <span id="exercise-last">Last week - 5hrs</span>
+          </div>
         </div>
-        <div class="article-content">
-          <h2 id="exercise-current">4hrs</h2>
-          <span id="exercise-last">Last week - 5hrs</span>
-        </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="article article-social">
-      <div class="article-body">
-        <div class="article-header">
-          <h1>Social</h1>
-          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+      <article class="article article-social">
+        <div class="article-body">
+          <div class="article-header">
+            <h1>Social</h1>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+          </div>
+          <div class="article-content">
+            <h2 id="social-current">5hrs</h2>
+            <span id="social-last">Last week - 10hrs</span>
+          </div>
         </div>
-        <div class="article-content">
-          <h2 id="social-current">5hrs</h2>
-          <span id="social-last">Last week - 10hrs</span>
-        </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="article article-self-care">
-      <div class="article-body">
-        <div class="article-header">
-          <h1>Self Care</h1>
-          <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+      <article class="article article-self-care">
+        <div class="article-body">
+          <div class="article-header">
+            <h1>Self Care</h1>
+            <img src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+          </div>
+          <div class="article-content">
+            <h2 id="self-care-current">2hrs</h2>
+            <span id="self-care-last">Last week - 2hrs</span>
+          </div>
         </div>
-        <div class="article-content">
-          <h2 id="self-care-current">2hrs</h2>
-          <span id="self-care-last">Last week - 2hrs</span>
-        </div>
-      </div>
-    </article>
+      </article>
+
+    </section>
   </main>
   <script src="./app.js"></script>
 
 </body>
+
 </html>

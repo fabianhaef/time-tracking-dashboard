@@ -170,3 +170,69 @@ main {
   background: var(--soft-orange) url('./images/icon-self-care.svg') no-repeat right top;
   padding-top: 32px;
 }
+
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  } 
+
+  .report {
+    height: 100%;
+
+  } 
+
+  .report-header{
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  .report-title {
+    font-size: 48px;
+  }
+
+  .image-box {
+    margin-bottom: 42px;
+    width: 86px;
+    height: 86px;
+  } 
+
+  .image-box img {
+    width: 86px;
+    height: 86px;
+  }
+
+  .filter {
+    flex-direction: column;
+  } 
+
+  .profile {
+    flex: 1;
+  } 
+
+  .time-trackers {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-around;
+    width: 830px;
+  } 
+
+  .article-body {
+    height: 100%;
+  }
+
+  .article-content {
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  .article-content h2 {
+    margin-top: 2rem;
+    font-size: 48px;
+  }
+
+}
